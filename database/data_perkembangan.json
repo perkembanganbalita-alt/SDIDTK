@@ -1,0 +1,1280 @@
+[
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 3,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Pada saat bayi terlentang, apakah masing-masing lengan dan tungkai bergerak dengan mudah?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 3,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Jangan membuat suara apapun. Pada saat bayi terlentang apakah ia melihat dan menatap wajah Anda?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 3,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Pada saat Anda mengajak bayi berbicara dan tersenyum, apakah ia tersenyum kembali kepada Anda?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 3,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi dapat mengeluarkan suara-suara lain (mengoceh) selain menangis?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 3,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi suka tertawa keras walau tidak digelitik atau diraba-raba?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 3,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Gerakkan gulungan wool merah dari samping kiri ke kanan kepala. Apakah ia dapat mengikuti gerakan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 3,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Gerakkan wool merah. Apakah ia dapat menggerakkan kepalanya dari satu sisi hampir sampai pada sisi yang lain?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 3,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Pada saat bayi tengkurap di alas datar, apakah ia dapat mengangkat kepalanya?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 3,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Pada saat bayi tengkurap, apakah ia dapat mengangkat kepalanya sehingga membentuk sudut 45 derajat?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 3,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Pada saat bayi tengkurap, apakah ia dapat mengangkat kepalanya dengan tegak?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 6,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi dapat menggerakkan kepala sepenuhnya dari satu sisi ke sisi lain untuk mengikuti wool merah?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 6,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Tarik perlahan kedua tangannya ke posisi duduk. Dapatkah bayi mempertahankan lehernya secara kaku?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 6,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Ketika tengkurap, apakah ia dapat mengangkat dada dengan kedua lengannya sebagai penyangga?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 6,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Saat dipangku, dapatkah bayi mempertahankan posisi kepala dalam keadaan tegak dan stabil?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 6,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Sentuhkan pensil di punggung tangan/ujung jari bayi. Apakah ia dapat menggenggam pensil itu?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 6,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Saat dipangku, dapatkah bayi mengarahkan matanya pada benda kecil sebesar kacang atau kismis?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 6,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah bayi meraih mainan yang diletakkan agak jauh namun masih dalam jangkauannya?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 6,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Pernahkah bayi berbalik paling sedikit 2 kali, dari terlentang ke tengkurap atau sebaliknya?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 6,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Pernahkah bayi mengeluarkan suara gembira bernada tinggi atau memekik tetapi bukan menangis?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 6,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Pernahkah bayi tersenyum ketika melihat mainan lucu/gambar saat bermain sendiri?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 9,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah bayi memungut benda kecil seperti kismis dengan gerakan miring/menggerapai?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 9,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah bayi memungut dan memegang kubus pada masing-masing tangannya?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 9,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Jatuhkan gulungan wool. Apakah bayi mencoba mencari benda tersebut ke bawah meja?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 9,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi mencoba mendapatkan mainan di luar jangkauan dengan mengulurkan badannya?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 9,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi menengok ke belakang saat mendengar kedatangan seseorang secara diam-diam?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 9,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat mengatakan 2 suku kata yang sama (misal: Ma-ma, Da-da)?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 9,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi dapat makan kue kering sendiri?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 9,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Pernahkah melihat bayi memindahkan mainan atau kue dari satu tangan ke tangan yang lain?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 9,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Tanpa disangga, dapatkah bayi duduk sendiri selama 60 detik?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 9,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Jika diangkat ke posisi berdiri, dapatkah bayi menyangga sebagian berat badan dengan kedua kakinya?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 12,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Letakkan pensil di telapak tangan anak. Apakah ia menggenggam erat?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 12,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak memungut benda kecil dengan gerakan menggerapai?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 12,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Tanpa bantuan, apakah anak dapat mempertemukan 2 kubus kecil?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 12,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Sebut 2-3 kata. Apakah ia mencoba meniru kata-kata tadi?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 12,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat mengangkat badannya ke posisi berdiri tanpa bantuan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 12,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat duduk sendiri tanpa bantuan dari posisi tidur/tengkurap?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 12,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat memahami makna kata 'jangan'?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 12,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak mencari/mengharapkan Anda jika Anda bersembunyi lalu muncul berulang-ulang?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 12,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat membedakan pengasuh/ibu dengan orang yang belum ia kenal?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 12,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat berdiri berpegangan pada kursi/meja selama 30 detik atau lebih?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 15,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Berikan 2 kubus. Tanpa bantuan, apakah anak dapat mempertemukan 2 kubus kecil yang ia pegang?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 15,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Berikan kubus dan cangkir. Apakah anak dapat memasukkan 1 kubus ke dalam cangkir?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 15,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat berjalan dengan berpegangan? "
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 15,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat mengatakan 'papa' atau 'mama' kepada orangtuanya dengan tepat? "
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 15,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat mengucapkan 1 kata bermakna selain 'mama', 'papa', atau nama orang? "
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 15,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat bertepuk tangan atau melambai-lambai tanpa bantuan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 15,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat menunjukkan apa yang diinginkannya tanpa menangis atau merengek? "
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 15,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat berdiri sendiri tanpa berpegangan selama 30 detik atau lebih? "
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 15,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Tanpa berpegangan, dapatkah anak membungkuk untuk memungut kubus di lantai dan berdiri kembali? "
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 15,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat berjalan di sepanjang ruangan tanpa jatuh atau terhuyung-huyung?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 18,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Berikan pensil dan kertas. Apakah anak dapat mencoret-coret tanpa bantuan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 18,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat menyebutkan sedikitnya 3 kata yang bermakna?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 18,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat menunjukkan apa yang diinginkan tanpa menangis atau merengek?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 18,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat minum dari cangkir/gelas sendiri tanpa banyak yang tumpah?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 18,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak suka meniru pekerjaan rumah tangga seperti menyapu atau merapikan mainan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 18,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak menggelindingkan atau melempar kembali bola tenis yang Anda gelindingkan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 18,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Tanpa berpegangan, dapatkah anak membungkuk memungut kubus di lantai lalu berdiri kembali?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 18,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak berjalan sepanjang ruangan tanpa terhuyung-huyung atau terjatuh?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 18,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak berjalan mundur minimal 5 langkah tanpa kehilangan keseimbangan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 18,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Berikan isyarat: \"Ambil kertas\", \"Ambil pensil\", \"Tutup pintu\". Dapatkah anak melakukannya?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 21,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat mencoret-coret kertas tanpa bantuan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 21,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Minta anak menyusun kubus. Apakah anak dapat menyusun 2 kubus?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 21,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Tunjukkan sekumpulan gambar. Apakah anak dapat menunjuk minimal 1 gambar sesuai yang Anda sebutkan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 21,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Tanpa bimbingan, dapatkah anak menunjuk paling sedikit 1 bagian tubuhnya dengan benar?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 21,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat mengucapkan minimal 7 kata yang mempunyai arti selain 'mama'/'papa'?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 21,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat minum dari cangkir/gelas sendiri tanpa banyak tumpah?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 21,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak suka meniru saat pengasuh sedang melakukan pekerjaan rumah tangga?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 21,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat berlari tanpa terjatuh?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 21,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak membungkuk memungut kubus di lantai dan berdiri kembali tanpa berpegangan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 21,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak berjalan mundur minimal 5 langkah tanpa kehilangan keseimbangan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 24,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat mencoret-coret kertas tanpa bantuan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 24,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Minta anak untuk menyusun kubus. Apakah anak dapat menyusun 4 kubus?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 24,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Tanpa bimbingan, dapatkah anak menunjuk paling sedikit 2 bagian tubuhnya dengan benar?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 24,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak mampu menggabungkan 2 kata berbeda ketika berbicara (misal: \"Minum susu\""
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 24,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat melepas pakaiannya seperti baju, rok, atau celana?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 24,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat makan dengan menggunakan sendok sendiri tanpa banyak tumpah?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 24,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat berlari tanpa terjatuh?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 24,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat berjalan naik tangga sendiri dalam posisi tegak atau berpegangan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 24,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Letakkan bola tenis di depan kakinya. Apakah ia dapat menendang ke depan tanpa berpegangan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 24,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Berikan perintah tanpa isyarat: \"Ambil kertas\", \"Ambil pensil\", \"Tutup pintu\". Dapatkah anak melakukannya?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 30,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak menyusun 4 buah kubus menyerupai kereta api dengan cerobong?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 30,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Buat garis lurus vertikal. Minta anak meniru. Apakah anak menggambar garis vertikal yang lurus?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 30,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Tanpa bantuan, dapatkah anak menyebut 2 gambar dengan benar di luar suara binatang?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 30,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak menunjuk 4 gambar dengan benar ketika Anda sebutkan namanya?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 30,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Tanpa bimbingan, dapatkah anak menunjuk paling sedikit 6 bagian tubuhnya?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 30,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak memahami perintah 2 langkah (misal: \"Tolong ambil bola dan berikan kepada Ayah\""
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 30,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak berpakaian sendiri seperti baju, rok, celana?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 30,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak bermain peran, misalnya pura-pura menyuapi boneka?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 30,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak menendang bola tenis ke depan tanpa berpegangan pada apapun?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 30,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak melompat dengan mengangkat kedua kakinya pada saat bersamaan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 36,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak menyusun 6 buah kubus satu persatu di atas yang lain tanpa menjatuhkannya?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 36,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Buat garis lurus vertikal. Minta anak meniru. Apakah ia berhasil menggambar garis vertikal lurus?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 36,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Tanpa bantuan, dapatkah anak menyebut 4 gambar dengan benar?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 36,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak memahami perintah 2 langkah (misal: \"Tolong ambil bola dan berikan kepada Ayah\""
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 36,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Apakah sebagian dari bicara anak dapat dipahami oleh orang asing (yang tidak bertemu setiap hari"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 36,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak merangkai kalimat sederhana minimal 3 kata (misal: \"Aku makan roti\""
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 36,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak menggosok gigi dengan bantuan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 36,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak mengenakan baju, celana, atau sepatu sendiri?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 36,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak melempar bola lurus ke arah perut atau dada Anda dari jarak 1,5 meter?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 36,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat melompati bagian lebar selembar kertas dengan dua kaki secara bersamaan tanpa didahului lari?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 42,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Minta anak meniru garis vertikal lurus. Apakah ia menggambar garis vertikal serupa?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 42,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak menyusun 8 buah kubus satu persatu tanpa menjatuhkannya?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 42,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Tunjukkan sekumpulan gambar, tanya \"Mana yang dapat terbang/mengeong/bicara dll\". Dapatkah menunjuk 2 dengan benar?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 42,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Tanyakan apa yang dilakukan jika kedinginan/kelelahan/lapar/haus. Dapatkah anak menjawab 3 dengan benar?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 42,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak menyebut 1 warna dengan benar?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 42,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat mencuci tangannya sendiri dengan baik setelah makan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 42,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak menyebut nama teman bermain di luar rumah atau saudara yang tidak serumah?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 42,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak mengenakan kaos (T-shirt"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 42,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak melompati bagian lebar kertas di lantai dengan dua kaki bersamaan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 42,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Minta berdiri 1 kaki tanpa berpegangan. Dapatkah ia mempertahankan keseimbangan minimal 1 detik?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 48,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Beri contoh membuat jembatan dari 3 kubus. Dapatkah anak melakukannya?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 48,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Buatlah lingkaran lalu minta anak menirunya. Dapatkah anak menggambar lingkaran?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 48,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Tanya \"Mana yang dapat terbang/menggonggong/meringkik dll\". Dapatkah anak menunjuk 2 gambar sesuai?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 48,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak menyebut nama lengkapnya tanpa dibantu dan bisa dimengerti?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 48,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Mengenal konsep satu: \"Ambil 1 kubus\". Dapatkah mengambil tepat 1 dan menyebut \"Satu\"?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 48,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "\"Apa kegunaan kursi/cangkir/pensil?\". Dapatkah menjawab ketiganya dengan benar?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 48,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak mengikuti peraturan saat bermain dengan teman (petak umpet, dll"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 48,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak mengenakan kaos (T-shirt"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 48,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak melompati bagian lebar kertas dengan mengangkat dua kaki bersamaan?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 48,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Berdiri 1 kaki tanpa berpegangan. Dapatkah mempertahankan keseimbangan minimal 2 detik?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 54,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Tunjukkan dua garis. Dapatkah anak menunjuk garis yang lebih panjang sebanyak 3 kali berturut-turut?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 54,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Minta menggambar tanda tambah (+"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 54,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "\"Buatlah gambar orang\". Dapatkah anak menggambar orang dengan sedikitnya 3 bagian tubuh?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 54,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Minta menyebutkan 2 warna. Dapatkah anak menyebut 2 warna dengan benar?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 54,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Apakah bicara anak mampu dipahami seluruhnya oleh orang asing?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 54,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak mengikuti peraturan saat bermain dengan teman-temannya?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 54,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak menggosok giginya sendiri tanpa dibantu?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 54,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat mengancingkan bajunya atau pakaian boneka?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 54,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Perintah meletakkan benda di atas/bawah/depan/samping/belakang. Dapatkah melakukan 2 perintah dengan benar?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 54,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Berdiri 1 kaki tanpa berpegangan. Dapatkah anak mempertahankan keseimbangan minimal 2 detik?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 60,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak menunjuk garis yang lebih panjang sebanyak 3 kali berturut-turut?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 60,
+    "Sub_Kategori": "Gerak halus",
+    "Pertanyaan_Atau_Keterangan": "\"Buatlah gambar orang\". Dapatkah anak menggambar orang dengan sedikitnya 3 bagian tubuh?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 60,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak menyebutkan 4 warna berbeda dengan benar?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 60,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Menjawab pertanyaan (Apa yang dilakukan saat kedinginan/kelelahan/lapar/haus?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 60,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat mengancingkan bajunya atau pakaian boneka?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 60,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak bereaksi tenang (tidak menangis/menggelayut"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 60,
+    "Sub_Kategori": "Sosialisasi",
+    "Pertanyaan_Atau_Keterangan": "Dapatkah anak sepenuhnya berpakaian sendiri tanpa dibantu?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 60,
+    "Sub_Kategori": "Bicara",
+    "Pertanyaan_Atau_Keterangan": "Perintah meletakkan benda di atas/bawah/depan/samping/belakang. Dapatkah melakukan sedikitnya 4 perintah?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 60,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Berdiri 1 kaki tanpa berpegangan. Dapatkah mempertahankan keseimbangan 4 detik atau lebih?"
+  },
+  {
+    "Kategori": "KPSP",
+    "Usia_Bulan": 60,
+    "Sub_Kategori": "Gerak kasar",
+    "Pertanyaan_Atau_Keterangan": "Minta melompat dengan 1 kaki. Dapatkah anak melompat 2-3 kali dengan 1 kaki tanpa berpegangan?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "0–3",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi dapat mengatakan \"Aaaaa\", \"Ooooo\"?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "0–3",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi menatap wajah dan tampak mendengarkan Anda, lalu berbicara saat Anda diam?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "0–3",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Apakah Anda dapat seolah-olah berbicara dengan bayi Anda?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "0–3",
+    "Sub_Kategori": "Reseptif",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi kaget bila mendengar suara (mengejapkan mata, napas lebih cepat)?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "0–3",
+    "Sub_Kategori": "Reseptif",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi kelihatan menoleh bila Anda berbicara di sebelahnya?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "0–3",
+    "Sub_Kategori": "Visual",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi Anda dapat tersenyum?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "0–3",
+    "Sub_Kategori": "Visual",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi Anda kenal dengan Anda, seperti tersenyum lebih cepat pada Anda dibandingkan orang lain?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "3–6",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi Anda dapat tertawa keras?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "3–6",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi dapat bermain menggelembungkan mulut seperti meniup balon?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "3–6",
+    "Sub_Kategori": "Reseptif",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi memberi respons tertentu, seperti menjadi lebih riang bila Anda datang"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "3–6",
+    "Sub_Kategori": "Reseptif",
+    "Pertanyaan_Atau_Keterangan": "Bunyikan bel di samping tanpa terlihat bayi, apakah bayi menoleh ke samping?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "3–6",
+    "Sub_Kategori": "Visual",
+    "Pertanyaan_Atau_Keterangan": "Gunakan mainan untuk menarik pandangan bayi ke kiri/kanan/atas/bawah, apakah bayi dapat mengikutinya?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "3–6",
+    "Sub_Kategori": "Visual",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi berkedip bila pemeriksa melakukan gerakan menusuk mata lalu berhenti 3 cm tanpa menyentuh mata?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "6–12",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi dapat membuat suara berulang seperti 'mamamama', 'babababa'?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "6–12",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi dapat memanggil mama atau papa (walaupun tidak spesifik)?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "6–12",
+    "Sub_Kategori": "Reseptif",
+    "Pertanyaan_Atau_Keterangan": "Bunyikan bel di samping bawah tanpa terlihat bayi, apakah bayi langsung menoleh ke samping bawah?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "6–12",
+    "Sub_Kategori": "Reseptif",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak mengikuti perintah tanpa dibantu gerakan badan (\"Stop, berikan mainanmu\")?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "6–12",
+    "Sub_Kategori": "Visual",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi mengikuti perintah dengan dibantu gerakan badan?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "6–12",
+    "Sub_Kategori": "Visual",
+    "Pertanyaan_Atau_Keterangan": "Apakah bayi spontan memulai permainan 'Pok Ame-Ame' atau 'Cilukba'?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "12–18",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat memanggil mama/papa spesifik kepada orang tuanya?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "12–18",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak mulai menggunakan kata-kata lain (selain mama/papa/keluarga)?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "12–18",
+    "Sub_Kategori": "Reseptif",
+    "Pertanyaan_Atau_Keterangan": "Sama seperti 6-12 bulan (menoleh ke samping bawah saat bel dibunyikan, mengikuti perintah tanpa gerakan badan)."
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "12–18",
+    "Sub_Kategori": "Visual",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak spontan memulai permainan tubuh ('Cilukba')?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "12–18",
+    "Sub_Kategori": "Visual",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak menunjuk dengan jari telunjuk bila ingin sesuatu (bukan memegang dengan semua jari)?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "18–24",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat mengucapkan 2 kata atau lebih yang menunjukkan keinginan (\"Susu\", \"Minum\")?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "18–24",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Spontan mengatakan 2 kombinasi kata (\"Mau bobo\")?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "18–24",
+    "Sub_Kategori": "Reseptif",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat menunjukkan minimal 1 anggota badan tanpa diberi contoh?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "18–24",
+    "Sub_Kategori": "Reseptif",
+    "Pertanyaan_Atau_Keterangan": "Mengerjakan 2 macam perintah dalam satu kalimat (\"Ambil sepatumu dan taruh sini\") tanpa dicontohkan?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "18–24",
+    "Sub_Kategori": "Visual",
+    "Pertanyaan_Atau_Keterangan": "Sama seperti 12-18 bulan (memulai permainan spontan, menunjuk dengan jari telunjuk)."
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "24–30",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak menggunakan kata lain selain panggilan keluarga?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "24–30",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Mulai mengungkapkan kata yang berarti milik (\"Bonekaku\")?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "24–30",
+    "Sub_Kategori": "Reseptif",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak dapat mengerjakan 2 perintah dalam 1 kalimat?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "24–30",
+    "Sub_Kategori": "Reseptif",
+    "Pertanyaan_Atau_Keterangan": "Apakah dapat menunjuk minimal 2 nama benda di depannya (cangkir, bola)?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "24–30",
+    "Sub_Kategori": "Visual",
+    "Pertanyaan_Atau_Keterangan": "Sama dengan sebelumnya (bermain spontan, menunjuk dengan telunjuk)."
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "30–36",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Apakah anak menyebutkan nama benda dan kegunaannya?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "30–36",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Apakah lebih dari 3/4 orang mengerti apa yang dibicarakan anak?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "30–36",
+    "Sub_Kategori": "Reseptif",
+    "Pertanyaan_Atau_Keterangan": "Menunjukkan minimal 2 nama benda sesuai fungsinya?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "30–36",
+    "Sub_Kategori": "Reseptif",
+    "Pertanyaan_Atau_Keterangan": "Mengerjakan perintah yang disertai kata depan (\"taruh di atas meja\")?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": "30–36",
+    "Sub_Kategori": "Visual",
+    "Pertanyaan_Atau_Keterangan": "Sama dengan sebelumnya."
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": ">36–60",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Menyebutkan nama benda dan kegunaannya?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": ">36–60",
+    "Sub_Kategori": "Ekspresif",
+    "Pertanyaan_Atau_Keterangan": "Tiga perempat orang mengerti pembicaraannya?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": ">36–60",
+    "Sub_Kategori": "Reseptif",
+    "Pertanyaan_Atau_Keterangan": "Menunjukkan minimal 2 nama benda sesuai fungsinya?"
+  },
+  {
+    "Kategori": "TDD",
+    "Usia_Bulan": ">36–60",
+    "Sub_Kategori": "Visual",
+    "Pertanyaan_Atau_Keterangan": "Spontan memulai permainan gerakan tubuh? Menunjuk dengan jari telunjuk bila menginginkan sesuatu?"
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "0-2",
+    "Sub_Kategori": "Perkembangan",
+    "Pertanyaan_Atau_Keterangan": "Motorik kasar: Mengangkat kepala 45°; Menahan kepala tetap tegak. Motorik halus: Meraba dan memegang benda; Menggerakkan kepala ke tengah; Pandangan mengikuti benda. Bicara: Cooing; Mengoceh spontan; Menoleh ke suara keras. Sosialisasi: Membalas senyum; Tertawa keras; Mengenal ibu; Menenangkan diri."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "0-2",
+    "Sub_Kategori": "Stimulasi",
+    "Pertanyaan_Atau_Keterangan": "Motorik: Latih angkat kepala, menahan kepala tegak, berguling. Halus: Latih meraba benda; Gantung benda berwarna/berbunyi. Bicara: Latih kenali suara; Tiru ocehan bayi. Sosialisasi: Kenali penyebab rewel; Bentuk rutinitas."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "0-2",
+    "Sub_Kategori": "Red Flags",
+    "Pertanyaan_Atau_Keterangan": "Tonus otot lemah; Tidak respon suara keras; Tidak bisa angkat kepala saat tengkurap; Tidak bawa tangan ke mulut; Tidak tersenyum."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": 46145,
+    "Sub_Kategori": "Perkembangan",
+    "Pertanyaan_Atau_Keterangan": "Motorik kasar: Tengkurap ke terlentang; Angkat kepala 90°; Kepala tegak stabil. Motorik halus: Pegang/goyangkan mainan; Meraih benda; Satukan tangan. Bicara: Suara gembira; Mengoceh ekspresif; Cari sumber suara. Sosialisasi: Masukkan tangan ke mulut; Meniru ekspresi; Menangis beda (lapar/lelah)."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": 46145,
+    "Sub_Kategori": "Stimulasi",
+    "Pertanyaan_Atau_Keterangan": "Motorik: Gendong tegak hadap depan; Latih duduk di sandaran; Latih sangga berat badan. Halus: Latih pegang benda di 2 tangan; Ambil benda kecil. Bicara: Tiru suara bayi; Beri rasa aman. Sosialisasi: Main cilukba; Lihat cermin."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": 46145,
+    "Sub_Kategori": "Red Flags",
+    "Pertanyaan_Atau_Keterangan": "Kepala tidak stabil; Tidak mampu gerakkan tangan ke tengah tubuh; Pandangan tidak ikuti benda; Kaki tidak menendang di permukaan keras; Tidak tersenyum."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": 46240,
+    "Sub_Kategori": "Perkembangan",
+    "Pertanyaan_Atau_Keterangan": "Motorik kasar: Duduk sendiri menopang; Berguling 2 arah; Merangkak. Motorik halus: Pindahkan benda antar tangan; Memungut benda kacang; Masukkan makanan ke mulut. Bicara: Mamama/bababa; Respon nama sendiri. Sosialisasi: Makan kue sendiri; Main tepuk tangan/cilukba; Respon emosi."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": 46240,
+    "Sub_Kategori": "Stimulasi",
+    "Pertanyaan_Atau_Keterangan": "Motorik: Usahakan merangkak meraih mainan; Latih jalan pegangan perabot. Halus: Latih mencoret; Masukkan benda ke wadah; Cari mainan sembunyi. Bicara: Bunyi pukul benda; Baca buku gambar. Sosialisasi: Main salaman/dadah; Perintah sederhana."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": 46240,
+    "Sub_Kategori": "Red Flags",
+    "Pertanyaan_Atau_Keterangan": "Tidak bisa pindahkan benda antar tangan; kesulitan bawa benda ke mulut; tidak ada suara vokal; tidak berguling; otot kaku; tidak menunjukkan kasih sayang."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": 46335,
+    "Sub_Kategori": "Perkembangan",
+    "Pertanyaan_Atau_Keterangan": "Motorik kasar: Duduk sendiri dari baring; Merangkak; Berdiri pegangan; Jalan dituntun. Motorik halus: Menjepit benda (jempol-telunjuk); Benturkan 2 benda; Cari benda sembunyi. Bicara: Tiru suara; Sebut 1 kata berarti; Respon bisikan. Sosialisasi: Takut orang asing; Paham kata 'tidak'; Menunjuk jari."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": 46335,
+    "Sub_Kategori": "Stimulasi",
+    "Pertanyaan_Atau_Keterangan": "Motorik: Latih duduk, merangkak, berdiri pegangan. Halus: Susun balok besar; Gambar krayon. Bicara: Deskripsi benda; Beritahu keinginan saat anak menunjuk; Main petak umpet. Sosialisasi: Main bergilir; Ajarkan dadah."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": 46335,
+    "Sub_Kategori": "Red Flags",
+    "Pertanyaan_Atau_Keterangan": "Tidak mampu duduk dengan bantuan; jarang berguling; tidak mengoceh konsonan; tidak respon nama; tidak menoleh arah ditunjuk; tidak ada interaksi timbal balik."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "12-17",
+    "Sub_Kategori": "Perkembangan",
+    "Pertanyaan_Atau_Keterangan": "Motorik kasar: Berdiri sendiri; Membungkuk pungut mainan; Berjalan baik. Motorik halus: Tumpuk 2 kubus; Masukkan/keluarkan benda; Mencoret. Bicara: Panggil papa/mama; Sebut 1-6 kata bermakna; Respon perintah lisan. Sosialisasi: Menunjuk keinginan; Rasa cemburu; Takut ortu pergi."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "12-17",
+    "Sub_Kategori": "Stimulasi",
+    "Pertanyaan_Atau_Keterangan": "Motorik: Latih jalan mundur; Naik turun tangga. Halus: Puzzle/manik besar; Tangkap/tendang bola. Bicara: Nama bagian tubuh; Bernyanyi gerakan; Baca buku cerita. Sosialisasi: Tiru kerja rumah; Lepas baju/makan sendiri."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "12-17",
+    "Sub_Kategori": "Red Flags",
+    "Pertanyaan_Atau_Keterangan": "Tidak ucap 1 kata pun; tidak dapat berdiri; tidak respon nama; tidak paham kata 'tidak'; tidak dapat menunjuk benda; acuh pada pengasuh."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "18-23",
+    "Sub_Kategori": "Perkembangan",
+    "Pertanyaan_Atau_Keterangan": "Motorik kasar: Jalan mundur; Naik tangga pegangan; Berlari. Motorik halus: Tumpuk 4 kubus; Mencoret; Gelindingkan bola. Bicara: 7-20 kata bermakna; Tunjuk keinginan; Tunjuk 1 bagian tubuh. Sosialisasi: Lepas baju dibantu; Tiru kerja rumah; Makan sendiri; Tahu jenis kelamin."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "18-23",
+    "Sub_Kategori": "Stimulasi",
+    "Pertanyaan_Atau_Keterangan": "Motorik: Latih berdiri 1 kaki; Jalan/lari/lompat. Halus: Main puzzle; Gambar wajah. Bicara: Tiru kata anak; Cerita frasa sederhana; Tanya pertanyaan sederhana. Sosialisasi: Main teman sebaya; Deskripsi emosi; Main telepon-teleponan."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "18-23",
+    "Sub_Kategori": "Red Flags",
+    "Pertanyaan_Atau_Keterangan": "Tidak peduli pengasuh datang/pergi; tidak jalan tanpa bantuan; tidak mampu meniru tindakan; tidak tahu fungsi benda familiar."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "24-35",
+    "Sub_Kategori": "Perkembangan",
+    "Pertanyaan_Atau_Keterangan": "Motorik kasar: Naik tangga sendiri; Berlari; Menendang bola. Motorik halus: Buat garis lurus; Tumpuk 4+ kubus. Bicara: Kalimat 2-4 kata; Nama orang dikenal; Tunjuk 6 bagian tubuh; Kenal bentuk/warna. Sosialisasi: Makan sendiri tanpa tumpah; Meniru anak lebih tua; Main peran."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "24-35",
+    "Sub_Kategori": "Stimulasi",
+    "Pertanyaan_Atau_Keterangan": "Motorik: Manjat/lompat jauh; Hadapi rintangan. Halus: Gambar tempel majalah; Proyek seni; Konsep jumlah (1-3). Bicara: Bicara tanpa cadel; Tanya apa/siapa setelah buku; Sebut nama lengkap. Sosialisasi: Toilet training; Latih cuci tangan."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "24-35",
+    "Sub_Kategori": "Red Flags",
+    "Pertanyaan_Atau_Keterangan": "Jalan tidak stabil; tidak bisa kalimat 2 kata; tidak mampu ikuti perintah sederhana; kontak mata minimal."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "36-47",
+    "Sub_Kategori": "Perkembangan",
+    "Pertanyaan_Atau_Keterangan": "Motorik kasar: Berdiri 1 kaki 2 detik; Lompat lebar 20cm; Naik turun tangga tanpa pegangan. Motorik halus: Tumpuk 8 kubus; Puzzle 3-4 bagian; Gambar orang 3 bagian. Bicara: Bicara dimengerti; Percakapan 2-3 kalimat; Paham posisi (atas/bawah). Sosialisasi: Cuci tangan sendiri; Pakai baju sendiri; Paham milikku/miliknya."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "36-47",
+    "Sub_Kategori": "Stimulasi",
+    "Pertanyaan_Atau_Keterangan": "Motorik: Lompat 1 kaki bergantian; Jalan garis lurus. Halus: Tulis huruf/angka/nama; Gunting/tempel; Konsep hitung. Bicara: Instruksi 2-3 langkah. Sosialisasi: Ajarkan 4 area tubuh pribadi; Makan sendok/garpu; Bicarakan emosi."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "36-47",
+    "Sub_Kategori": "Red Flags",
+    "Pertanyaan_Atau_Keterangan": "Sering jatuh naik tangga; tidak mampu kalimat 3 kata; bicara tidak jelas/berliur; tidak ingin bermain dengan anak lain."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "48-60",
+    "Sub_Kategori": "Perkembangan",
+    "Pertanyaan_Atau_Keterangan": "Motorik kasar: Berdiri 1 kaki 6 detik; Lompat-lompat; Menangkap bola pantul. Motorik halus: Gambar tanda + dan lingkaran; Orang 4-6 bagian; Mengancing baju. Bicara: Konsep waktu; Hitung jari; Nama lengkap/hari; Prediksi alur cerita. Sosialisasi: Ungkapkan simpati; Ikuti aturan main; Gosok gigi sendiri."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "48-60",
+    "Sub_Kategori": "Stimulasi",
+    "Pertanyaan_Atau_Keterangan": "Motorik: Balap karung, engklek, tari. Halus: Gambar/gunting/tempel; Konsep besar-kecil/berat-ringan. Bicara: Simbol/huruf; Pertanyaan mengapa; Gadget max 1 jam. Sosialisasi: Bantu kerja rumah; Kunjungi tetangga tanpa ortu; Pilih baju sendiri."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "48-60",
+    "Sub_Kategori": "Red Flags",
+    "Pertanyaan_Atau_Keterangan": "Tidak dapat melompat di tempat; kesulitan gambar orang; bicara tidak jelas; tidak merespon orang luar; tidak tertarik main pura-pura."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "60-72",
+    "Sub_Kategori": "Perkembangan",
+    "Pertanyaan_Atau_Keterangan": "Motorik kasar: Berdiri 1 kaki 11+ detik; Melompat jauh. Motorik halus: Tangkap bola kecil 2 tangan; Orang lengkap (6 bagian); Tulis angka/huruf; Hitung 5-10 benda. Bicara: Bicara jelas; Alamat rumah; Kegunaan benda; Lawan kata. Sosialisasi: Mandiri; Ikuti aturan permainan."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "60-72",
+    "Sub_Kategori": "Stimulasi",
+    "Pertanyaan_Atau_Keterangan": "Motorik: Halang rintang; Jalan sekitar rumah. Halus: Proyek seni berbagai alat. Bicara: Akhir cerita; Konsep waktu bulan/minggu; Jenis uang. Sosialisasi: Makan sekeluarga; Sentuhan aman; Alamat & nomor telepon."
+  },
+  {
+    "Kategori": "TAHAPAN",
+    "Usia_Bulan": "60-72",
+    "Sub_Kategori": "Red Flags",
+    "Pertanyaan_Atau_Keterangan": "Tidak dapat buat gambar; keseimbangan buruk; tidak paham huruf/warna; tidak bisa tulis nama; tidak bisa rangkum cerita runtut."
+  }
+]
