@@ -38,7 +38,7 @@
 
         <!-- Sidebar for All Roles -->
         <aside x-cloak :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'"
-               class="fixed inset-y-0 left-0 w-64 bg-white border-r border-slate-100 flex flex-col h-full z-40 shadow-lg transition-transform duration-300 ease-in-out -translate-x-full lg:translate-x-0 lg:relative lg:shadow-sm lg:z-20">
+               class="fixed inset-y-0 left-0 w-64 bg-white border-r border-slate-100 flex flex-col h-full z-40 shadow-lg transition-transform duration-300 ease-in-out lg:translate-x-0 lg:relative lg:shadow-sm lg:z-20">
             <div class="h-16 flex items-center px-6 border-b border-slate-50 gap-3 shrink-0">
                 <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
@@ -119,7 +119,7 @@
     @endauth
 
     <!-- Main Content Wrapper -->
-    <div class="flex-grow flex flex-col min-w-0 relative z-10 bg-background">
+    <div class="flex-grow flex flex-col min-w-0 bg-background">
         @auth
         <!-- Topbar for All Roles -->
         <header class="h-14 lg:h-16 bg-white border-b border-slate-100 flex items-center justify-between px-4 lg:px-6 shrink-0 z-10 shadow-sm">

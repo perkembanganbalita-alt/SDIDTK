@@ -258,71 +258,71 @@
 
         <!-- Stats Cards -->
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 mb-6 sm:mb-8">
-            <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 flex flex-col justify-between">
-                <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            <div class="bg-white rounded-2xl p-3 sm:p-5 shadow-sm border border-slate-100 flex flex-col justify-between">
+                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-2 sm:mb-4">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                 </div>
                 <div>
-                    <h3 class="text-3xl font-extrabold text-slate-800">{{ $totalBayi }}</h3>
-                    <p class="text-xs font-semibold text-slate-500 mt-1">Total Anak</p>
-                    <p class="text-[10px] text-slate-400 mt-1">+{{ $bayiBaruBulanIni }} bulan ini</p>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-800">{{ $totalBayi }}</h3>
+                    <p class="text-[10px] sm:text-xs font-semibold text-slate-500 mt-1">Total Anak</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5 sm:mt-1">+{{ $bayiBaruBulanIni }} bulan ini</p>
                 </div>
             </div>
             
-            <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 flex flex-col justify-between">
-                <div class="w-10 h-10 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center mb-4">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+            <div class="bg-white rounded-2xl p-3 sm:p-5 shadow-sm border border-slate-100 flex flex-col justify-between">
+                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center mb-2 sm:mb-4">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
                 </div>
                 <div>
-                    <h3 class="text-3xl font-extrabold text-slate-800">{{ $pemeriksaanHariIni }}</h3>
-                    <p class="text-xs font-semibold text-slate-500 mt-1">Pemeriksaan Hari Ini</p>
-                    <p class="text-[10px] text-slate-400 mt-1">{{ $pemeriksaanBelumSelesai }} belum selesai</p>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-800">{{ $pemeriksaanHariIni }}</h3>
+                    <p class="text-[10px] sm:text-xs font-semibold text-slate-500 mt-1">Periksa Hari Ini</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5 sm:mt-1">{{ $pemeriksaanBelumSelesai }} belum selesai</p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 flex flex-col justify-between">
-                <div class="w-10 h-10 rounded-full bg-success/10 text-success flex items-center justify-center mb-4">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <div class="bg-white rounded-2xl p-3 sm:p-5 shadow-sm border border-slate-100 flex flex-col justify-between">
+                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-success/10 text-success flex items-center justify-center mb-2 sm:mb-4">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
                 <div>
-                    <h3 class="text-3xl font-extrabold text-slate-800">{{ $totalSesuai }}</h3>
-                    <p class="text-xs font-semibold text-slate-500 mt-1">Sesuai Umur</p>
-                    <p class="text-[10px] text-slate-400 mt-1">{{ $totalPemeriksaan > 0 ? round(($totalSesuai/$totalPemeriksaan)*100, 1) : 0 }}% dari total</p>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-800">{{ $totalSesuai }}</h3>
+                    <p class="text-[10px] sm:text-xs font-semibold text-slate-500 mt-1">Sesuai Umur</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5 sm:mt-1">{{ $totalPemeriksaan > 0 ? round(($totalSesuai/$totalPemeriksaan)*100, 1) : 0 }}%</p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 flex flex-col justify-between">
-                <div class="w-10 h-10 rounded-full bg-warning/10 text-warning flex items-center justify-center mb-4">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <div class="bg-white rounded-2xl p-3 sm:p-5 shadow-sm border border-slate-100 flex flex-col justify-between">
+                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-warning/10 text-warning flex items-center justify-center mb-2 sm:mb-4">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
                 </div>
                 <div>
-                    <h3 class="text-3xl font-extrabold text-slate-800">{{ $totalMeragukan }}</h3>
-                    <p class="text-xs font-semibold text-slate-500 mt-1">Meragukan</p>
-                    <p class="text-[10px] text-slate-400 mt-1">{{ $totalPemeriksaan > 0 ? round(($totalMeragukan/$totalPemeriksaan)*100, 1) : 0 }}% dari total</p>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-800">{{ $totalMeragukan }}</h3>
+                    <p class="text-[10px] sm:text-xs font-semibold text-slate-500 mt-1">Meragukan</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5 sm:mt-1">{{ $totalPemeriksaan > 0 ? round(($totalMeragukan/$totalPemeriksaan)*100, 1) : 0 }}%</p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 flex flex-col justify-between">
-                <div class="w-10 h-10 rounded-full bg-danger/10 text-danger flex items-center justify-center mb-4">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+            <div class="bg-white rounded-2xl p-3 sm:p-5 shadow-sm border border-slate-100 flex flex-col justify-between col-span-2 sm:col-span-1">
+                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-danger/10 text-danger flex items-center justify-center mb-2 sm:mb-4">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                 </div>
                 <div>
-                    <h3 class="text-3xl font-extrabold text-slate-800">{{ $totalPenyimpangan }}</h3>
-                    <p class="text-xs font-semibold text-slate-500 mt-1">Penyimpangan</p>
-                    <p class="text-[10px] text-slate-400 mt-1">{{ $totalPemeriksaan > 0 ? round(($totalPenyimpangan/$totalPemeriksaan)*100, 1) : 0 }}% dari total</p>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-800">{{ $totalPenyimpangan }}</h3>
+                    <p class="text-[10px] sm:text-xs font-semibold text-slate-500 mt-1">Penyimpangan</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5 sm:mt-1">{{ $totalPemeriksaan > 0 ? round(($totalPenyimpangan/$totalPemeriksaan)*100, 1) : 0 }}%</p>
                 </div>
             </div>
         </div>
 
         <!-- Charts Section -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
-            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 lg:col-span-2">
-                <div class="flex justify-between items-center mb-6">
+            <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-slate-100 lg:col-span-2">
+                <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 mb-6">
                     <div>
-                        <h3 class="text-base font-bold text-slate-800">Grafik Pemeriksaan Bulanan</h3>
+                        <h3 class="text-sm sm:text-base font-bold text-slate-800">Grafik Pemeriksaan Bulanan</h3>
                         <p class="text-xs text-slate-500">6 bulan terakhir</p>
                     </div>
-                    <div class="flex items-center gap-4 text-xs font-medium flex-wrap">
+                    <div class="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-xs font-medium flex-wrap">
                         <div class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-success"></span> Sesuai</div>
                         <div class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-warning"></span> Meragukan</div>
                         <div class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-danger"></span> Rujukan</div>
