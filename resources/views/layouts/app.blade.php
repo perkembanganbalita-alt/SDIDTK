@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posyandu Tumbuh Kembang Anak</title>
     <link rel="icon" type="image/png" href="{{ asset('images/baby_illustration.png') }}">
+    <!-- PWA Settings -->
+    <link rel="manifest" href="{{ asset('manifest.json') }}">
+    <meta name="theme-color" content="#0284C7">
+    <link rel="apple-touch-icon" href="{{ asset('images/baby_illustration.png') }}">
     <!-- Vite Assets (Tailwind CSS compiled) -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Alpine.js -->
@@ -20,6 +24,18 @@
         body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
         [x-cloak] { display: none !important; }
     </style>
+    <!-- PWA Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').then(registration => {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }).catch(err => {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
 </head>
 <body class="text-slate-800 antialiased h-[100dvh] flex overflow-hidden bg-background" x-data="{ sidebarOpen: false }">
     @auth
