@@ -101,29 +101,29 @@
         </div>
 
         @if($jenis === 'kpsp')
-        <div class="grid grid-cols-3 gap-4 mb-8">
-            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 text-center">
-                <div class="text-3xl font-extrabold text-success mb-1">{{ $pemeriksaan->skor_kpsp }}</div>
-                <div class="text-xs font-bold text-slate-500 uppercase tracking-wide">Skor Ya</div>
+        <div class="grid grid-cols-3 gap-2 sm:gap-4 mb-8">
+            <div class="bg-white rounded-2xl p-2 sm:p-4 shadow-sm border border-slate-100 text-center">
+                <div class="text-2xl sm:text-3xl font-extrabold text-success mb-1">{{ $pemeriksaan->skor_kpsp }}</div>
+                <div class="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-tight sm:tracking-wide">Skor Ya</div>
             </div>
-            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 text-center">
-                <div class="text-3xl font-extrabold text-danger mb-1">{{ 10 - $pemeriksaan->skor_kpsp }}</div>
-                <div class="text-xs font-bold text-slate-500 uppercase tracking-wide">Skor Tidak</div>
+            <div class="bg-white rounded-2xl p-2 sm:p-4 shadow-sm border border-slate-100 text-center">
+                <div class="text-2xl sm:text-3xl font-extrabold text-danger mb-1">{{ 10 - $pemeriksaan->skor_kpsp }}</div>
+                <div class="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-tight sm:tracking-wide">Skor Tidak</div>
             </div>
-            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 text-center">
-                <div class="text-3xl font-extrabold text-slate-800 mb-1">{{ $pemeriksaan->skor_kpsp }}/10</div>
-                <div class="text-xs font-bold text-slate-500 uppercase tracking-wide">Total Skor</div>
+            <div class="bg-white rounded-2xl p-2 sm:p-4 shadow-sm border border-slate-100 text-center">
+                <div class="text-2xl sm:text-3xl font-extrabold text-slate-800 mb-1">{{ $pemeriksaan->skor_kpsp }}/10</div>
+                <div class="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-tight sm:tracking-wide">Total Skor</div>
             </div>
         </div>
         @elseif($jenis === 'tdd')
-        <div class="grid grid-cols-2 gap-4 mb-8">
-            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 text-center">
-                <div class="text-3xl font-extrabold text-danger mb-1">{{ $pemeriksaan->skor_tdd }}</div>
-                <div class="text-xs font-bold text-slate-500 uppercase tracking-wide">Jawaban Tidak</div>
+        <div class="grid grid-cols-2 gap-2 sm:gap-4 mb-8">
+            <div class="bg-white rounded-2xl p-2 sm:p-4 shadow-sm border border-slate-100 text-center">
+                <div class="text-2xl sm:text-3xl font-extrabold text-danger mb-1">{{ $pemeriksaan->skor_tdd }}</div>
+                <div class="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-tight sm:tracking-wide">Jawaban Tidak</div>
             </div>
-            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 text-center">
-                <div class="text-3xl font-extrabold text-slate-800 mb-1">{{ count($pemeriksaan->tdd_jawabans) }}</div>
-                <div class="text-xs font-bold text-slate-500 uppercase tracking-wide">Total Pertanyaan</div>
+            <div class="bg-white rounded-2xl p-2 sm:p-4 shadow-sm border border-slate-100 text-center">
+                <div class="text-2xl sm:text-3xl font-extrabold text-slate-800 mb-1">{{ count($pemeriksaan->tdd_jawabans) }}</div>
+                <div class="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-tight sm:tracking-wide">Total Pertanyaan</div>
             </div>
         </div>
         @endif

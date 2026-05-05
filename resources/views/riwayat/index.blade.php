@@ -262,22 +262,22 @@
             <table class="w-full text-left border-collapse">
                 <thead>
                     <tr class="bg-white border-b border-slate-100 text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
-                        <th class="py-4 px-6">No</th>
-                        <th class="py-4 px-6">Nama Anak</th>
-                        <th class="py-4 px-6">Orang Tua</th>
-                        <th class="py-4 px-6">Umur</th>
-                        <th class="py-4 px-6">Tanggal</th>
-                        <th class="py-4 px-6">Kategori</th>
-                        <th class="py-4 px-6">Skor</th>
-                        <th class="py-4 px-6">Status</th>
-                        <th class="py-4 px-6 text-right">Aksi</th>
+                        <th class="py-4 px-6 whitespace-nowrap">No</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Nama Anak</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Orang Tua</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Umur</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Tanggal</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Kategori</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Skor</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Status</th>
+                        <th class="py-4 px-6 whitespace-nowrap text-right">Aksi</th>
                     </tr>
                 </thead>
                 <tbody class="text-sm">
                     @forelse($riwayat as $index => $item)
                         <tr class="border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
-                            <td class="py-4 px-6 text-slate-500">{{ $riwayat->firstItem() + $index }}</td>
-                            <td class="py-4 px-6 font-medium text-slate-800">
+                            <td class="py-4 px-6 whitespace-nowrap text-slate-500">{{ $riwayat->firstItem() + $index }}</td>
+                            <td class="py-4 px-6 whitespace-nowrap font-medium text-slate-800">
                                 <div class="flex items-center gap-3">
                                     <div class="w-8 h-8 rounded-full {{ strpos($item->hasil_kpsp, 'Sesuai') !== false ? 'bg-success/10 text-success' : (strpos($item->hasil_kpsp, 'Meragukan') !== false ? 'bg-warning/10 text-warning' : 'bg-danger/10 text-danger') }} flex items-center justify-center font-bold text-xs uppercase">
                                         {{ substr($item->bayi->nama_bayi, 0, 1) }}
@@ -285,13 +285,13 @@
                                     {{ $item->bayi->nama_bayi }}
                                 </div>
                             </td>
-                            <td class="py-4 px-6 text-slate-600">{{ $item->bayi->orangTua->nama_ortu ?? '-' }}</td>
-                            <td class="py-4 px-6 text-slate-600">{{ $item->umur_saat_periksa_bulan }} Bulan</td>
-                            <td class="py-4 px-6 text-slate-600">{{ \Carbon\Carbon::parse($item->tgl_pemeriksaan)->translatedFormat('d M Y') }}</td>
+                            <td class="py-4 px-6 whitespace-nowrap text-slate-600">{{ $item->bayi->orangTua->nama_ortu ?? '-' }}</td>
+                            <td class="py-4 px-6 whitespace-nowrap text-slate-600">{{ $item->umur_saat_periksa_bulan }} Bulan</td>
+                            <td class="py-4 px-6 whitespace-nowrap text-slate-600">{{ \Carbon\Carbon::parse($item->tgl_pemeriksaan)->translatedFormat('d M Y') }}</td>
                             @php $jenisAktif = $item->hasil_kpsp ? 'kpsp' : 'tdd'; @endphp
-                            <td class="py-4 px-6 font-bold text-slate-700 uppercase">{{ $jenisAktif }}</td>
-                            <td class="py-4 px-6 font-medium text-slate-700">{{ $jenisAktif === 'kpsp' ? ($item->skor_kpsp ?? '-') . '/10' : ($item->skor_tdd ?? '-') }}</td>
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-6 whitespace-nowrap font-bold text-slate-700 uppercase">{{ $jenisAktif }}</td>
+                            <td class="py-4 px-6 whitespace-nowrap font-medium text-slate-700">{{ $jenisAktif === 'kpsp' ? ($item->skor_kpsp ?? '-') . '/10' : ($item->skor_tdd ?? '-') }}</td>
+                            <td class="py-4 px-6 whitespace-nowrap">
                                 @if($jenisAktif === 'kpsp')
                                     @if(strpos($item->hasil_kpsp, 'Sesuai') !== false)
                                         <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium bg-success/10 text-success"><div class="w-1.5 h-1.5 rounded-full bg-success"></div> Sesuai Umur</span>
@@ -308,7 +308,7 @@
                                     @endif
                                 @endif
                             </td>
-                            <td class="py-4 px-6 text-right">
+                            <td class="py-4 px-6 whitespace-nowrap text-right">
                                 <a href="{{ route('pemeriksaan.hasil', ['jenis' => $jenisAktif, 'pemeriksaan' => $item->id]) }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors text-xs font-bold" title="Detail">
                                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                                     Detail

@@ -38,12 +38,12 @@
             <table class="w-full text-left border-collapse">
                 <thead>
                     <tr class="bg-white border-b border-slate-100 text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
-                        <th class="py-4 px-6">Nama Balita</th>
-                        <th class="py-4 px-6">Tanggal Lahir</th>
-                        <th class="py-4 px-6">Umur</th>
-                        <th class="py-4 px-6">Jenis Kelamin</th>
-                        <th class="py-4 px-6">Status Terakhir</th>
-                        <th class="py-4 px-6 text-right">Aksi</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Nama Balita</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Tanggal Lahir</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Umur</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Jenis Kelamin</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Status Terakhir</th>
+                        <th class="py-4 px-6 whitespace-nowrap text-right">Aksi</th>
                     </tr>
                 </thead>
                 <tbody class="text-sm">
@@ -60,7 +60,7 @@
                             $status = $pemeriksaan ? $pemeriksaan->hasil_kpsp : null;
                         @endphp
                         <tr class="border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-6 whitespace-nowrap">
                                 <div class="flex items-center gap-3">
                                     <div class="w-8 h-8 rounded-full bg-success/10 text-success flex items-center justify-center">
                                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
@@ -68,10 +68,10 @@
                                     <span class="font-medium text-slate-800">{{ $bayi->nama_bayi }}</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6 text-slate-600">{{ $tglLahir->format('Y-m-d') }}</td>
-                            <td class="py-4 px-6 text-slate-600">{{ floor($umurBulan / 12) > 0 ? floor($umurBulan / 12) . ' Tahun ' : '' }}{{ $umurBulan % 12 > 0 ? ($umurBulan % 12) . ' Bulan' : '' }}{{ $umurBulan == 0 ? '0 Bulan' : '' }}</td>
-                            <td class="py-4 px-6 text-slate-600">{{ $bayi->jenis_kelamin == 'L' ? 'Laki-laki' : 'Perempuan' }}</td>
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-6 whitespace-nowrap text-slate-600">{{ $tglLahir->format('Y-m-d') }}</td>
+                            <td class="py-4 px-6 whitespace-nowrap text-slate-600">{{ floor($umurBulan / 12) > 0 ? floor($umurBulan / 12) . ' Tahun ' : '' }}{{ $umurBulan % 12 > 0 ? ($umurBulan % 12) . ' Bulan' : '' }}{{ $umurBulan == 0 ? '0 Bulan' : '' }}</td>
+                            <td class="py-4 px-6 whitespace-nowrap text-slate-600">{{ $bayi->jenis_kelamin == 'L' ? 'Laki-laki' : 'Perempuan' }}</td>
+                            <td class="py-4 px-6 whitespace-nowrap">
                                 @if($status && strpos($status, 'Sesuai') !== false)
                                     <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-success/10 text-success">Sesuai Umur</span>
                                 @elseif($status && strpos($status, 'Meragukan') !== false)
@@ -82,7 +82,7 @@
                                     <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-500">Belum Skrining</span>
                                 @endif
                             </td>
-                            <td class="py-4 px-6 text-right">
+                            <td class="py-4 px-6 whitespace-nowrap text-right">
                                 <div class="flex items-center justify-end gap-2">
 
                                     <button @click="editData = { id: '{{ $bayi->id }}', nama: '{{ addslashes($bayi->nama_bayi) }}', tgl_lahir: '{{ $tglLahir->format('Y-m-d') }}', jenis_kelamin: '{{ $bayi->jenis_kelamin }}' }; showEditModal = true" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors text-xs font-bold" title="Edit">
@@ -339,12 +339,12 @@
             <table class="w-full text-left border-collapse">
                 <thead>
                     <tr class="bg-white border-b border-slate-100 text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
-                        <th class="py-4 px-6">No</th>
-                        <th class="py-4 px-6">Nama Orang Tua</th>
-                        <th class="py-4 px-6">Nama Anak</th>
-                        <th class="py-4 px-6">JK</th>
-                        <th class="py-4 px-6">Tanggal Lahir</th>
-                        <th class="py-4 px-6">Umur</th>
+                        <th class="py-4 px-6 whitespace-nowrap">No</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Nama Orang Tua</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Nama Anak</th>
+                        <th class="py-4 px-6 whitespace-nowrap">JK</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Tanggal Lahir</th>
+                        <th class="py-4 px-6 whitespace-nowrap">Umur</th>
                     </tr>
                 </thead>
                 <tbody class="text-sm">
@@ -360,8 +360,8 @@
                         <tr class="border-b border-slate-50 hover:bg-slate-50/50 transition-colors"
                             x-show="(gender === 'all' || '{{ $bayi->jenis_kelamin }}' === gender) && 
                                     ('{{ strtolower($bayi->nama_bayi) }}'.includes(search.toLowerCase()) || '{{ strtolower($bayi->orangTua->nama_ortu ?? '') }}'.includes(search.toLowerCase()))">
-                            <td class="py-4 px-6 text-slate-500">{{ $index + 1 }}</td>
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-6 whitespace-nowrap text-slate-500">{{ $index + 1 }}</td>
+                            <td class="py-4 px-6 whitespace-nowrap">
                                 <div class="flex items-center gap-2">
                                     <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-[10px]">
                                         <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
@@ -369,21 +369,21 @@
                                     <span class="text-slate-700">{{ $bayi->orangTua->nama_ortu ?? '-' }}</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6 font-medium text-slate-800">
+                            <td class="py-4 px-6 whitespace-nowrap font-medium text-slate-800">
                                 <div class="flex items-center gap-2">
                                     <div class="w-2 h-2 rounded-full {{ $bayi->jenis_kelamin == 'L' ? 'bg-blue-400' : 'bg-pink-400' }}"></div>
                                     {{ $bayi->nama_bayi }}
                                 </div>
                             </td>
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-6 whitespace-nowrap">
                                 @if($bayi->jenis_kelamin == 'L')
                                     <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-50 text-blue-600">Laki-laki</span>
                                 @else
                                     <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-pink-50 text-pink-600">Perempuan</span>
                                 @endif
                             </td>
-                            <td class="py-4 px-6 text-slate-600">{{ $tglLahir->translatedFormat('d M Y') }}</td>
-                            <td class="py-4 px-6 font-medium text-success">{{ floor($umurBulan / 12) > 0 ? floor($umurBulan / 12) . ' Th ' : '' }}{{ $umurBulan % 12 > 0 ? ($umurBulan % 12) . ' Bln' : '' }}{{ $umurBulan == 0 ? '0 Bln' : '' }}</td>
+                            <td class="py-4 px-6 whitespace-nowrap text-slate-600">{{ $tglLahir->translatedFormat('d M Y') }}</td>
+                            <td class="py-4 px-6 whitespace-nowrap font-medium text-success">{{ floor($umurBulan / 12) > 0 ? floor($umurBulan / 12) . ' Th ' : '' }}{{ $umurBulan % 12 > 0 ? ($umurBulan % 12) . ' Bln' : '' }}{{ $umurBulan == 0 ? '0 Bln' : '' }}</td>
                         </tr>
                     @endforeach
                 </tbody>
