@@ -21,7 +21,7 @@
         [x-cloak] { display: none !important; }
     </style>
 </head>
-<body class="text-slate-800 antialiased h-screen flex overflow-hidden bg-background" x-data="{ sidebarOpen: false }">
+<body class="text-slate-800 antialiased h-[100dvh] flex overflow-hidden bg-background" x-data="{ sidebarOpen: false }">
     @auth
         <!-- Mobile Overlay -->
         <div x-show="sidebarOpen" 
@@ -188,7 +188,7 @@
         </header>
         @endauth
 
-        <main class="flex-grow overflow-y-auto overflow-x-hidden relative p-4 lg:p-6 w-full">
+        <main class="flex-grow overflow-y-auto overflow-x-hidden relative p-4 pb-24 lg:p-6 w-full">
             @if(session('success'))
             <div x-data="{ show: true }" x-show="show" x-init="setTimeout(() => show = false, 3000)" class="fixed top-4 right-4 left-4 sm:left-auto z-50">
                 <div class="bg-success text-white px-4 sm:px-6 py-3 rounded-lg shadow-lg flex items-center gap-3">
