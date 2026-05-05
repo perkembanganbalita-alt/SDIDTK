@@ -78,6 +78,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         new TomSelect(".select2-bayi", {
             create: false,
+            searchField: ['text', 'ortu'],
             sortField: { field: "text", direction: "asc" },
             placeholder: "Cari nama anak atau orang tua...",
             render: {

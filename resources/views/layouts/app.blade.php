@@ -122,7 +122,7 @@
     <div class="flex-grow flex flex-col min-w-0 bg-background overflow-hidden">
         @auth
         <!-- Topbar for All Roles -->
-        <header class="h-14 lg:h-16 bg-white border-b border-slate-100 flex items-center justify-between px-4 lg:px-6 shrink-0 z-10 shadow-sm">
+        <header class="h-14 lg:h-16 bg-white border-b border-slate-100 flex items-center justify-between px-4 lg:px-6 shrink-0 z-20 shadow-sm">
             <!-- Left side: Hamburger + Page title -->
             <div class="flex items-center gap-3 flex-1 min-w-0">
                 <!-- Mobile Hamburger -->
