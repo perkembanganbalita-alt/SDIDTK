@@ -78,7 +78,7 @@ class RiwayatController extends Controller
 
     public function downloadPdf(Pemeriksaan $pemeriksaan)
     {
-        if (Auth::user()->role === 'Orangtua' && $pemeriksaan->bayi?->orang_tua_id !== Auth::user()->orangTua?->id) {
+        if (Auth::user()->role === 'Orangtua' && $pemeriksaan->bayi?->orang_tua_id != Auth::user()->orangTua?->id) {
             abort(403);
         }
 
