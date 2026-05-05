@@ -15,6 +15,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Barryvdh\DomPDF\Facade\Pdf;
+use App\Mail\HasilSkriningMail;
 
 class PemeriksaanController extends Controller
 {
@@ -213,16 +214,13 @@ class PemeriksaanController extends Controller
             }
         }
 
-        // Simulasikan pengiriman email via Log/Mailtrap jika email ortu ada
+        // Kirim email hasil skrining ke orang tua
         if (session('send_email') && $pemeriksaan->bayi->orangTua->email_ortu) {
             try {
                 $pdf = Pdf::loadView('riwayat.pdf', compact('pemeriksaan', 'tahapanToShow', 'jenis'));
                 
-                Mail::raw("Halo Bapak/Ibu {$pemeriksaan->bayi->orangTua->nama_ortu},\n\nBerikut terlampir hasil skrining perkembangan (" . strtoupper($jenis) . ") ananda {$pemeriksaan->bayi->nama_bayi}.", function($msg) use ($pemeriksaan, $pdf, $jenis) {
-                    $msg->to($pemeriksaan->bayi->orangTua->email_ortu)
-                        ->subject('Hasil Skrining ' . strtoupper($jenis) . ' - PediatriCare')
-                        ->attachData($pdf->output(), "Hasil_Skrining_". strtoupper($jenis) ."_{$pemeriksaan->bayi->nama_bayi}.pdf");
-                });
+                Mail::to($pemeriksaan->bayi->orangTua->email_ortu)
+                    ->send(new HasilSkriningMail($pemeriksaan, $jenis, $pdf->output()));
             } catch (\Exception $e) {
                 // Ignore mail error if not configured
             }
