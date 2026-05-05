@@ -119,7 +119,7 @@
     @endauth
 
     <!-- Main Content Wrapper -->
-    <div class="flex-grow flex flex-col min-w-0 bg-background">
+    <div class="flex-grow flex flex-col min-w-0 bg-background overflow-hidden">
         @auth
         <!-- Topbar for All Roles -->
         <header class="h-14 lg:h-16 bg-white border-b border-slate-100 flex items-center justify-between px-4 lg:px-6 shrink-0 z-10 shadow-sm">
@@ -188,7 +188,7 @@
         </header>
         @endauth
 
-        <main class="flex-grow overflow-auto relative p-4 lg:p-6">
+        <main class="flex-grow overflow-y-auto overflow-x-hidden relative p-4 lg:p-6 w-full">
             @if(session('success'))
             <div x-data="{ show: true }" x-show="show" x-init="setTimeout(() => show = false, 3000)" class="fixed top-4 right-4 left-4 sm:left-auto z-50">
                 <div class="bg-success text-white px-4 sm:px-6 py-3 rounded-lg shadow-lg flex items-center gap-3">
