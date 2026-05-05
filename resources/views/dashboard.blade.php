@@ -103,9 +103,12 @@
                             <p class="text-sm font-medium text-slate-700 mb-1">Ada pemeriksaan TDD yang perlu diperhatikan.</p>
                             @php
                                 $currentUser = Auth::user();
-                                $curigaTdd = \App\Models\Pemeriksaan::whereHas('bayi', function($q) use ($currentUser) {
-                                    $q->where('orang_tua_id', $currentUser->orangTua->id ?? 0);
-                                })->where('hasil_tdd', 'Curiga')->latest()->first();
+                                $orangTuaIdForTdd = optional($currentUser->orangTua)->id ?? 0;
+                                $curigaTdd = $orangTuaIdForTdd
+                                    ? \App\Models\Pemeriksaan::whereHas('bayi', function($q) use ($orangTuaIdForTdd) {
+                                        $q->where('orang_tua_id', $orangTuaIdForTdd);
+                                    })->where('hasil_tdd', 'Curiga')->latest()->first()
+                                    : null;
                             @endphp
                             @if($curigaTdd)
                             <p class="text-xs text-slate-500 mb-4">{{ $curigaTdd->bayi->nama_bayi }} - {{ \Carbon\Carbon::parse($curigaTdd->tgl_pemeriksaan)->format('Y-m-d') }}</p>
