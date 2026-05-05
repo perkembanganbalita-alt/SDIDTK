@@ -60,13 +60,6 @@
                     </select>
                 </div>
 
-                <div class="mb-8">
-                    <label class="block text-sm font-bold text-slate-700 mb-2">Tanggal Pemeriksaan <span class="text-danger">*</span></label>
-                    <div class="relative">
-                        <input type="date" name="tgl_pemeriksaan" required value="{{ date('Y-m-d') }}" class="w-full px-4 py-3 border border-slate-200 rounded-xl focus:ring-primary focus:border-primary transition bg-slate-50 text-slate-700">
-                    </div>
-                </div>
-
                 <div class="flex flex-col sm:flex-row gap-4 pt-4 border-t border-slate-100">
                     <a href="{{ route('dashboard') }}" class="w-full sm:w-1/2 text-center py-3 px-6 border border-slate-200 text-slate-600 rounded-xl font-bold hover:bg-slate-50 transition-colors">
                         Kembali

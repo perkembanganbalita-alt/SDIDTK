@@ -7,7 +7,12 @@
     showEditModal: false,
     showDeleteModal: false,
     editData: { id: '', name: '', email: '' },
-    deleteId: ''
+    deleteId: '',
+    showAddOrangtuaModal: false,
+    showEditOrangtuaModal: false,
+    showDeleteOrangtuaModal: false,
+    editOrangtuaData: { id: '', name: '', email: '' },
+    deleteOrangtuaId: ''
 }">
     <!-- Header -->
     <div class="mb-8">
@@ -25,6 +30,10 @@
         <button @click="activeTab = 'nakes'" :class="activeTab === 'nakes' ? 'bg-primary text-white' : 'text-slate-600 hover:bg-slate-50'" class="px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 transition-colors">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
             Manajemen Nakes
+        </button>
+        <button @click="activeTab = 'orangtua'" :class="activeTab === 'orangtua' ? 'bg-primary text-white' : 'text-slate-600 hover:bg-slate-50'" class="px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            Manajemen Orangtua
         </button>
         @endif
         @if(Auth::user()->role === 'Admin')
@@ -227,6 +236,147 @@
                 @csrf
                 @method('DELETE')
                 <button type="button" @click="showDeleteModal = false" class="flex-1 py-2.5 border border-slate-200 rounded-xl text-slate-600 font-bold text-sm hover:bg-slate-50 transition-colors">Batal</button>
+                <button type="submit" class="flex-1 py-2.5 bg-danger rounded-xl text-white font-bold text-sm hover:bg-danger/90 transition-colors shadow-sm">Ya, Hapus</button>
+            </form>
+        </div>
+    </div>
+    <!-- Content Manajemen Orangtua -->
+    <div x-show="activeTab === 'orangtua'" style="display: none;" class="space-y-6">
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+            <div class="p-6 border-b border-slate-50 flex justify-between items-center">
+                <div>
+                    <h3 class="text-base font-bold text-slate-800">Manajemen Orangtua</h3>
+                    <p class="text-xs text-slate-500">Kelola akun orang tua/wali anak</p>
+                </div>
+                <button @click="showAddOrangtuaModal = true" class="bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium shadow-sm transition-colors flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                    Tambah Akun
+                </button>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 border-b border-slate-100 text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                            <th class="py-3 px-6">Nama Lengkap</th>
+                            <th class="py-3 px-6">Email</th>
+                            <th class="py-3 px-6">Status</th>
+                            <th class="py-3 px-6 text-right">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm divide-y divide-slate-50">
+                        @forelse($orangtuas as $ortu)
+                        <tr class="hover:bg-slate-50/50 transition-colors">
+                            <td class="py-3 px-6 font-medium text-slate-800">{{ $ortu->name }}</td>
+                            <td class="py-3 px-6 text-slate-600">{{ $ortu->email }}</td>
+                            <td class="py-3 px-6">
+                                @if($ortu->email_verified_at)
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-medium bg-success/10 text-success">Aktif</span>
+                                @else
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-medium bg-warning/10 text-warning">Belum Verifikasi</span>
+                                @endif
+                            </td>
+                            <td class="py-3 px-6 text-right">
+                                <div class="flex justify-end gap-2">
+                                    <button @click="editOrangtuaData = { id: '{{ $ortu->id }}', name: '{{ addslashes($ortu->name) }}', email: '{{ addslashes($ortu->email) }}' }; showEditOrangtuaModal = true" class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-100 transition-colors" title="Edit">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                                    </button>
+                                    <button @click="deleteOrangtuaId = '{{ $ortu->id }}'; showDeleteOrangtuaModal = true" class="w-8 h-8 rounded-lg bg-danger/10 text-danger flex items-center justify-center hover:bg-danger/20 transition-colors" title="Hapus">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        @empty
+                        <tr>
+                            <td colspan="4" class="py-6 text-center text-slate-500 text-sm">Belum ada data Orangtua.</td>
+                        </tr>
+                        @endforelse
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Tambah Orangtua -->
+    <div x-show="showAddOrangtuaModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4 z-50" style="display: none;">
+        <div @click.away="showAddOrangtuaModal = false" class="bg-white rounded-2xl shadow-xl w-full max-w-md overflow-hidden">
+            <div class="px-6 py-4 border-b border-slate-100 flex justify-between items-center">
+                <h2 class="text-lg font-bold text-slate-800">Tambah Akun Orangtua</h2>
+                <button @click="showAddOrangtuaModal = false" class="text-slate-400 hover:text-slate-600 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <form action="{{ route('pengaturan.orangtua.store') }}" method="POST" class="p-6">
+                @csrf
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Nama Lengkap</label>
+                        <input type="text" name="name" required class="w-full px-4 py-2.5 border border-slate-200 rounded-xl text-sm focus:ring-primary focus:border-primary">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                        <input type="email" name="email" required class="w-full px-4 py-2.5 border border-slate-200 rounded-xl text-sm focus:ring-primary focus:border-primary">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Password</label>
+                        <input type="password" name="password" required class="w-full px-4 py-2.5 border border-slate-200 rounded-xl text-sm focus:ring-primary focus:border-primary" placeholder="Minimal 6 karakter">
+                    </div>
+                </div>
+                <p class="mt-3 text-xs text-slate-400"><svg class="w-3.5 h-3.5 inline -mt-0.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Akun yang dibuat admin langsung aktif tanpa verifikasi OTP.</p>
+                <div class="mt-6 flex gap-3">
+                    <button type="button" @click="showAddOrangtuaModal = false" class="flex-1 py-2.5 border border-slate-200 rounded-xl text-slate-600 font-bold text-sm hover:bg-slate-50 transition-colors">Batal</button>
+                    <button type="submit" class="flex-1 py-2.5 bg-primary rounded-xl text-white font-bold text-sm hover:bg-primary/90 transition-colors shadow-sm">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Edit Orangtua -->
+    <div x-show="showEditOrangtuaModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4 z-50" style="display: none;">
+        <div @click.away="showEditOrangtuaModal = false" class="bg-white rounded-2xl shadow-xl w-full max-w-md overflow-hidden">
+            <div class="px-6 py-4 border-b border-slate-100 flex justify-between items-center">
+                <h2 class="text-lg font-bold text-slate-800">Edit Akun Orangtua</h2>
+                <button @click="showEditOrangtuaModal = false" class="text-slate-400 hover:text-slate-600 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <form :action="'{{ url('pengaturan/orangtua') }}/' + editOrangtuaData.id" method="POST" class="p-6">
+                @csrf
+                @method('PUT')
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Nama Lengkap</label>
+                        <input type="text" name="name" x-model="editOrangtuaData.name" required class="w-full px-4 py-2.5 border border-slate-200 rounded-xl text-sm focus:ring-primary focus:border-primary">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                        <input type="email" name="email" x-model="editOrangtuaData.email" required class="w-full px-4 py-2.5 border border-slate-200 rounded-xl text-sm focus:ring-primary focus:border-primary">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Password Baru (Opsional)</label>
+                        <input type="password" name="password" class="w-full px-4 py-2.5 border border-slate-200 rounded-xl text-sm focus:ring-primary focus:border-primary" placeholder="Kosongkan jika tidak ingin diubah">
+                    </div>
+                </div>
+                <div class="mt-6 flex gap-3">
+                    <button type="button" @click="showEditOrangtuaModal = false" class="flex-1 py-2.5 border border-slate-200 rounded-xl text-slate-600 font-bold text-sm hover:bg-slate-50 transition-colors">Batal</button>
+                    <button type="submit" class="flex-1 py-2.5 bg-primary rounded-xl text-white font-bold text-sm hover:bg-primary/90 transition-colors shadow-sm">Simpan Perubahan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Hapus Orangtua -->
+    <div x-show="showDeleteOrangtuaModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4 z-50" style="display: none;">
+        <div @click.away="showDeleteOrangtuaModal = false" class="bg-white rounded-2xl shadow-xl w-full max-w-sm overflow-hidden text-center p-6">
+            <div class="w-12 h-12 rounded-full bg-danger/10 text-danger flex items-center justify-center mx-auto mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+            </div>
+            <h2 class="text-lg font-bold text-slate-800 mb-2">Hapus Akun Orangtua?</h2>
+            <p class="text-sm text-slate-500 mb-8">Akun ini beserta data terkait akan dihapus dari sistem.</p>
+            <form :action="'{{ url('pengaturan/orangtua') }}/' + deleteOrangtuaId" method="POST" class="flex gap-3">
+                @csrf
+                @method('DELETE')
+                <button type="button" @click="showDeleteOrangtuaModal = false" class="flex-1 py-2.5 border border-slate-200 rounded-xl text-slate-600 font-bold text-sm hover:bg-slate-50 transition-colors">Batal</button>
                 <button type="submit" class="flex-1 py-2.5 bg-danger rounded-xl text-white font-bold text-sm hover:bg-danger/90 transition-colors shadow-sm">Ya, Hapus</button>
             </form>
         </div>

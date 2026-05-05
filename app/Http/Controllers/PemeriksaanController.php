@@ -33,14 +33,16 @@ class PemeriksaanController extends Controller
 
         $request->validate([
             'bayi_id' => 'required|exists:bayis,id',
-            'tgl_pemeriksaan' => 'required|date'
         ]);
 
         $bayi = Bayi::findOrFail($request->bayi_id);
 
+        // Tanggal pemeriksaan otomatis hari ini
+        $tglPemeriksaan = Carbon::today()->format('Y-m-d');
+
         // Hitung umur
         $tglLahir = Carbon::parse($bayi->tgl_lahir);
-        $tglPeriksa = Carbon::parse($request->tgl_pemeriksaan);
+        $tglPeriksa = Carbon::parse($tglPemeriksaan);
         
         $diff = $tglLahir->diff($tglPeriksa);
         $umurBulan = ($diff->y * 12) + $diff->m;
@@ -68,7 +70,7 @@ class PemeriksaanController extends Controller
         $pemeriksaan = Pemeriksaan::create([
             'bayi_id' => $bayi->id,
             'nakes_id' => Auth::id(),
-            'tgl_pemeriksaan' => $request->tgl_pemeriksaan,
+            'tgl_pemeriksaan' => $tglPemeriksaan,
             'umur_saat_periksa_bulan' => $umurSkrining,
         ]);
 

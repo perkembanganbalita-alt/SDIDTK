@@ -247,7 +247,6 @@
             <div class="relative z-10 text-center md:text-left mb-6 md:mb-0">
                 <h1 class="text-2xl md:text-3xl font-bold mb-2">Halo, {{ Auth::user()->name }}! 👋</h1>
                 <p class="text-primary-50 text-sm md:text-base opacity-90">{{ now()->translatedFormat('l, d F Y') }}</p>
-                <p class="text-white mt-1 font-medium">Ada {{ $pemeriksaanHariIni }} pemeriksaan yang dijadwalkan hari ini.</p>
             </div>
             <div class="relative z-10">
                 <a href="{{ route('pemeriksaan.index', ['jenis' => 'kpsp']) }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-primary rounded-xl font-bold shadow-sm hover:bg-slate-50 transition-colors">

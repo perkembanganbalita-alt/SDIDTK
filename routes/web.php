@@ -60,6 +60,11 @@ Route::middleware('auth')->group(function () {
         Route::post('/nakes', [\App\Http\Controllers\PengaturanController::class, 'storeNakes'])->name('nakes.store');
         Route::put('/nakes/{user}', [\App\Http\Controllers\PengaturanController::class, 'updateNakes'])->name('nakes.update');
         Route::delete('/nakes/{user}', [\App\Http\Controllers\PengaturanController::class, 'destroyNakes'])->name('nakes.destroy');
+
+        // Admin only orangtua management
+        Route::post('/orangtua', [\App\Http\Controllers\PengaturanController::class, 'storeOrangtua'])->name('orangtua.store');
+        Route::put('/orangtua/{user}', [\App\Http\Controllers\PengaturanController::class, 'updateOrangtua'])->name('orangtua.update');
+        Route::delete('/orangtua/{user}', [\App\Http\Controllers\PengaturanController::class, 'destroyOrangtua'])->name('orangtua.destroy');
         
         // Admin backup
         Route::get('/backup', [\App\Http\Controllers\PengaturanController::class, 'backupDatabase'])->name('backup');
