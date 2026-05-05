@@ -9,16 +9,16 @@
     </div>
 
     <!-- Stepper -->
-    <div class="flex items-center justify-center md:justify-start gap-4 mb-8">
-        <div class="flex items-center gap-2 bg-success/10 text-success px-4 py-2 rounded-full text-sm font-bold">
+    <div class="flex items-center justify-start gap-2 sm:gap-4 mb-6 sm:mb-8 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0">
+        <div class="flex items-center gap-1.5 sm:gap-2 bg-success/10 text-success px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap shrink-0">
             <span>1</span> Pilih Anak
         </div>
-        <div class="w-12 h-px bg-slate-200"></div>
-        <div class="flex items-center gap-2 text-slate-400 px-4 py-2 rounded-full text-sm font-medium">
+        <div class="w-6 sm:w-12 h-px bg-slate-200 shrink-0"></div>
+        <div class="flex items-center gap-1.5 sm:gap-2 text-slate-400 px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap shrink-0">
             <span>2</span> Kuesioner {{ strtoupper($jenis) }}
         </div>
-        <div class="w-12 h-px bg-slate-200"></div>
-        <div class="flex items-center gap-2 text-slate-400 px-4 py-2 rounded-full text-sm font-medium">
+        <div class="w-6 sm:w-12 h-px bg-slate-200 shrink-0"></div>
+        <div class="flex items-center gap-1.5 sm:gap-2 text-slate-400 px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap shrink-0">
             <span>3</span> Hasil
         </div>
     </div>

@@ -49,17 +49,17 @@
     </div>
 
     <!-- Stepper -->
-    <div class="flex items-center justify-center md:justify-start gap-4 mb-8">
-        <div class="flex items-center gap-2 bg-success/10 text-success px-4 py-2 rounded-full text-sm font-bold">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+    <div class="flex items-center justify-start gap-2 sm:gap-4 mb-6 sm:mb-8 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0">
+        <div class="flex items-center gap-1.5 sm:gap-2 bg-success/10 text-success px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap shrink-0">
+            <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
             Pilih Anak
         </div>
-        <div class="w-8 h-px bg-slate-200"></div>
-        <div class="flex items-center gap-2 bg-success/10 text-success px-4 py-2 rounded-full text-sm font-bold shadow-sm ring-1 ring-success/20">
+        <div class="w-6 sm:w-8 h-px bg-slate-200 shrink-0"></div>
+        <div class="flex items-center gap-1.5 sm:gap-2 bg-success/10 text-success px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-sm ring-1 ring-success/20 whitespace-nowrap shrink-0">
             <span>2</span> Kuesioner {{ strtoupper($jenis) }}
         </div>
-        <div class="w-8 h-px bg-slate-200"></div>
-        <div class="flex items-center gap-2 text-slate-400 px-4 py-2 rounded-full text-sm font-medium">
+        <div class="w-6 sm:w-8 h-px bg-slate-200 shrink-0"></div>
+        <div class="flex items-center gap-1.5 sm:gap-2 text-slate-400 px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap shrink-0">
             <span>3</span> Hasil
         </div>
     </div>
@@ -104,7 +104,7 @@
                 </div>
 
                 <!-- Questions -->
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 relative min-h-[300px]">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-4 sm:p-8 relative min-h-[250px] sm:min-h-[300px]">
                     @foreach($allQuestions as $index => $q)
                         <div x-show="currentStep === {{ $index + 1 }}" x-transition.opacity style="display: none;">
                             <div class="flex items-center gap-3 mb-6">
@@ -112,7 +112,7 @@
                                 <span class="text-sm text-slate-500 font-medium">Pertanyaan {{ $index + 1 }} dari {{ $totalQuestions }}</span>
                             </div>
                             
-                            <h2 class="text-xl md:text-2xl font-bold text-slate-800 mb-8 leading-snug">
+                            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-6 sm:mb-8 leading-snug">
                                 {{ $q->pertanyaan }}
                             </h2>
 

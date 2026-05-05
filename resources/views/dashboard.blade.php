@@ -4,25 +4,25 @@
 @if(Auth::user()->role === 'Orangtua')
     <div class="max-w-7xl mx-auto" x-data="{ chartType: 'pie' }">
         <!-- Hero Banner -->
-        <div class="bg-white rounded-2xl p-6 mb-8 shadow-sm border border-slate-100 flex items-center gap-4">
-            <div class="w-12 h-12 rounded-xl bg-success/10 text-success flex items-center justify-center shrink-0">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <div class="bg-white rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8 shadow-sm border border-slate-100 flex items-center gap-3 sm:gap-4">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-success/10 text-success flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </div>
-            <div>
-                <h1 class="text-xl font-bold text-slate-800">Halo, {{ explode(' ', Auth::user()->name)[0] }}! 👋</h1>
-                <p class="text-sm text-slate-500">Pantau perkembangan anak Anda secara berkala.</p>
+            <div class="min-w-0">
+                <h1 class="text-lg sm:text-xl font-bold text-slate-800 truncate">Halo, {{ explode(' ', Auth::user()->name)[0] }}! 👋</h1>
+                <p class="text-xs sm:text-sm text-slate-500">Pantau perkembangan anak Anda secara berkala.</p>
             </div>
         </div>
 
         <!-- Stats Cards -->
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
-            <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 flex items-center justify-between">
-                <div>
-                    <p class="text-xs font-semibold text-slate-500 mb-1">Jumlah Anak</p>
-                    <h3 class="text-3xl font-extrabold text-slate-800">{{ $totalBayi }}</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 mb-6 sm:mb-8">
+            <div class="bg-white rounded-2xl p-3 sm:p-5 shadow-sm border border-slate-100 flex items-center justify-between">
+                <div class="min-w-0">
+                    <p class="text-[10px] sm:text-xs font-semibold text-slate-500 mb-1">Jumlah Anak</p>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-800">{{ $totalBayi }}</h3>
                 </div>
-                <div class="w-10 h-10 rounded-full bg-success/10 text-success flex items-center justify-center shrink-0">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-success/10 text-success flex items-center justify-center shrink-0">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
             </div>
             <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 flex items-center justify-between">
@@ -63,7 +63,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
             <!-- Charts Section -->
             <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 lg:col-span-2">
                 <div class="flex justify-between items-center mb-6">
@@ -129,9 +129,9 @@
         </div>
 
         <!-- Riwayat Pemeriksaan Terbaru -->
-        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden mb-8">
-            <div class="p-6 border-b border-slate-100">
-                <h3 class="text-base font-bold text-slate-800">Riwayat Pemeriksaan Terbaru</h3>
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden mb-6 sm:mb-8">
+            <div class="p-4 sm:p-6 border-b border-slate-100">
+                <h3 class="text-sm sm:text-base font-bold text-slate-800">Riwayat Pemeriksaan Terbaru</h3>
             </div>
             <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse">
@@ -173,14 +173,14 @@
                                 @endif
                             </td>
                             <td class="py-4 px-6">
-                                <div class="flex items-center gap-2">
-                                    <a href="{{ route('pemeriksaan.hasil', ['jenis' => $jenisAktif, 'pemeriksaan' => $aktif->id]) }}" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors text-xs font-bold">
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <a href="{{ route('pemeriksaan.hasil', ['jenis' => $jenisAktif, 'pemeriksaan' => $aktif->id]) }}" class="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors text-xs font-bold whitespace-nowrap">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                                         Detail
                                     </a>
-                                    <a href="{{ route('riwayat.pdf', $aktif->id) }}" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-danger/10 text-danger hover:bg-danger/20 transition-colors text-xs font-bold" target="_blank">
+                                    <a href="{{ route('riwayat.pdf', $aktif->id) }}" class="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg bg-danger/10 text-danger hover:bg-danger/20 transition-colors text-xs font-bold whitespace-nowrap" target="_blank">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                                        Ekspor PDF
+                                        PDF
                                     </a>
                                 </div>
                             </td>
@@ -241,23 +241,23 @@
     <!-- Admin/Nakes Dashboard -->
     <div class="max-w-7xl mx-auto">
         <!-- Hero Banner -->
-        <div class="bg-primary rounded-2xl p-8 text-white mb-8 shadow-sm flex flex-col md:flex-row justify-between items-center relative overflow-hidden">
+        <div class="bg-primary rounded-2xl p-5 sm:p-8 text-white mb-6 sm:mb-8 shadow-sm flex flex-col md:flex-row justify-between items-center relative overflow-hidden">
             <div class="absolute -right-20 -top-20 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
             <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-black/10 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="relative z-10 text-center md:text-left mb-6 md:mb-0">
-                <h1 class="text-2xl md:text-3xl font-bold mb-2">Halo, {{ Auth::user()->name }}! 👋</h1>
-                <p class="text-primary-50 text-sm md:text-base opacity-90">{{ now()->translatedFormat('l, d F Y') }}</p>
+            <div class="relative z-10 text-center md:text-left mb-4 md:mb-0">
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold mb-1 sm:mb-2">Halo, {{ explode(' ', Auth::user()->name)[0] }}! 👋</h1>
+                <p class="text-primary-50 text-xs sm:text-sm md:text-base opacity-90">{{ now()->translatedFormat('l, d F Y') }}</p>
             </div>
-            <div class="relative z-10">
-                <a href="{{ route('pemeriksaan.index', ['jenis' => 'kpsp']) }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-primary rounded-xl font-bold shadow-sm hover:bg-slate-50 transition-colors">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+            <div class="relative z-10 w-full md:w-auto">
+                <a href="{{ route('pemeriksaan.index', ['jenis' => 'kpsp']) }}" class="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 bg-white text-primary rounded-xl font-bold shadow-sm hover:bg-slate-50 transition-colors w-full md:w-auto text-sm sm:text-base">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
                     Mulai Pemeriksaan
                 </a>
             </div>
         </div>
 
         <!-- Stats Cards -->
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 mb-6 sm:mb-8">
             <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 flex flex-col justify-between">
                 <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
@@ -315,7 +315,7 @@
         </div>
 
         <!-- Charts Section -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
             <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 lg:col-span-2">
                 <div class="flex justify-between items-center mb-6">
                     <div>
@@ -371,7 +371,7 @@
         </div>
 
         <!-- Quick Actions -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div class="grid grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
             <a href="{{ route('pemeriksaan.index', ['jenis' => 'kpsp']) }}" class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 flex flex-col items-center justify-center gap-3 hover:bg-slate-50 transition-colors group">
                 <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center group-hover:scale-110 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
