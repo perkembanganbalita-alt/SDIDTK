@@ -21,21 +21,26 @@ class PemeriksaanController extends Controller
 {
     public function index($jenis)
     {
-        if (Auth::user()->role === 'Orangtua') abort(403);
-
-        $bayis = Bayi::with('orangTua')->get();
+        if (Auth::user()->role === 'Orangtua') {
+            $orangTuaId = Auth::user()->orangTua?->id;
+            $bayis = Bayi::with('orangTua')->where('orang_tua_id', $orangTuaId)->get();
+        } else {
+            $bayis = Bayi::with('orangTua')->get();
+        }
         return view('pemeriksaan.index', compact('bayis', 'jenis'));
     }
 
     public function storeBayi(Request $request, $jenis)
     {
-        if (Auth::user()->role === 'Orangtua') abort(403);
-
         $request->validate([
             'bayi_id' => 'required|exists:bayis,id',
         ]);
 
         $bayi = Bayi::findOrFail($request->bayi_id);
+
+        if (Auth::user()->role === 'Orangtua' && $bayi->orang_tua_id != Auth::user()->orangTua?->id) {
+            abort(403);
+        }
 
         // Tanggal pemeriksaan otomatis hari ini
         $tglPemeriksaan = Carbon::today()->format('Y-m-d');
@@ -69,7 +74,7 @@ class PemeriksaanController extends Controller
 
         $pemeriksaan = Pemeriksaan::create([
             'bayi_id' => $bayi->id,
-            'nakes_id' => Auth::id(),
+            'nakes_id' => Auth::user()->role === 'Orangtua' ? null : Auth::id(),
             'tgl_pemeriksaan' => $tglPemeriksaan,
             'umur_saat_periksa_bulan' => $umurSkrining,
         ]);
@@ -79,7 +84,9 @@ class PemeriksaanController extends Controller
 
     public function kuesioner($jenis, Pemeriksaan $pemeriksaan)
     {
-        if (Auth::user()->role === 'Orangtua') abort(403);
+        if (Auth::user()->role === 'Orangtua' && $pemeriksaan->bayi?->orang_tua_id != Auth::user()->orangTua?->id) {
+            abort(403);
+        }
 
         $umur = $pemeriksaan->umur_saat_periksa_bulan;
         $kpsp = collect();
@@ -111,7 +118,9 @@ class PemeriksaanController extends Controller
 
     public function submitKuesioner(Request $request, $jenis, Pemeriksaan $pemeriksaan)
     {
-        if (Auth::user()->role === 'Orangtua') abort(403);
+        if (Auth::user()->role === 'Orangtua' && $pemeriksaan->bayi?->orang_tua_id != Auth::user()->orangTua?->id) {
+            abort(403);
+        }
 
         $kpspAns = $request->input('kpsp', []);
         $tddAns = $request->input('tdd', []);

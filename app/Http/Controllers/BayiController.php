@@ -90,7 +90,7 @@ class BayiController extends Controller
         if (Auth::user()->role !== 'Orangtua') {
             abort(403, 'Unauthorized action.');
         }
-        if ($bayi->orang_tua_id !== Auth::user()->orangTua->id) {
+        if ($bayi->orang_tua_id != Auth::user()->orangTua?->id) {
             abort(403, 'Unauthorized action.');
         }
     }
