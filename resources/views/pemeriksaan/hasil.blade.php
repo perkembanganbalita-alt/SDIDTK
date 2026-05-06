@@ -150,8 +150,8 @@
                 <p class="text-sm font-bold text-slate-800">{{ $bayi->jenis_kelamin == 'L' ? 'Laki-laki' : 'Perempuan' }}</p>
             </div>
             <div>
-                <p class="text-xs text-slate-500 font-medium mb-1">Kader</p>
-                <p class="text-sm font-bold text-slate-800">{{ $pemeriksaan->nakes->name ?? Auth::user()->name }}</p>
+                <p class="text-xs text-slate-500 font-medium mb-1">Pemeriksa</p>
+                <p class="text-sm font-bold text-slate-800">{{ optional($pemeriksaan->nakes)->name ?? $pemeriksaan->bayi->orangTua->nama_ortu }}</p>
             </div>
         </div>
     </div>

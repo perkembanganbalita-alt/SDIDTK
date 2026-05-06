@@ -33,7 +33,7 @@ class HasilSkriningMail extends Mailable
         $this->namaBayi = $pemeriksaan->bayi->nama_bayi;
         $this->tanggalPemeriksaan = Carbon::parse($pemeriksaan->tgl_pemeriksaan)->format('d F Y');
         $this->umurSkrining = $pemeriksaan->umur_saat_periksa_bulan;
-        $this->namaNakes = optional($pemeriksaan->nakes)->name ?? 'Petugas Posyandu';
+        $this->namaNakes = optional($pemeriksaan->nakes)->name ?? $this->namaOrtu;
         $this->pdfData = $pdfData;
 
         if ($jenis === 'kpsp') {

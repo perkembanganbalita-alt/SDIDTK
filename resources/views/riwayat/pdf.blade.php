@@ -61,7 +61,7 @@
             <div class="card">
                 <h3 class="card-title">Data Pemeriksaan</h3>
                 <p><strong>Nama Orang Tua:</strong> {{ $pemeriksaan->bayi->orangTua->nama_ortu }}</p>
-                <p><strong>Pemeriksa (Nakes):</strong> {{ optional($pemeriksaan->nakes)->name ?? '-' }}</p>
+                <p><strong>Pemeriksa:</strong> {{ optional($pemeriksaan->nakes)->name ?? $pemeriksaan->bayi->orangTua->nama_ortu }}</p>
                 @if($jenis === 'kpsp')
                 <p><strong>Skor KPSP:</strong> {{ $pemeriksaan->skor_kpsp }} / 10</p>
                 <p><strong>Hasil KPSP:</strong> <span class="{{ $pemeriksaan->hasil_kpsp == 'Sesuai (S)' ? 'text-success' : ($pemeriksaan->hasil_kpsp == 'Meragukan (M)' ? 'text-warning' : 'text-danger') }}">{{ $pemeriksaan->hasil_kpsp }}</span></p>

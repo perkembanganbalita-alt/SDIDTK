@@ -18,28 +18,9 @@
             <h2 class="text-xl font-bold text-slate-800 mb-1">Pengaturan Akun</h2>
             <p class="text-sm text-slate-500 mb-10">Kelola informasi profil Anda</p>
             
-            <form action="{{ route('orangtua.profile.update') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('orangtua.profile.update') }}" method="POST">
                 @csrf
                 
-                <!-- Avatar Section -->
-                <div class="flex flex-col items-center justify-center mb-10">
-                    <div class="relative mb-3">
-                        <div class="w-24 h-24 rounded-full bg-slate-100 border-4 border-white shadow-sm overflow-hidden flex items-center justify-center text-slate-400 relative">
-                            @if($user->avatar)
-                                <img id="avatarPreview" src="{{ asset('storage/' . $user->avatar) }}" alt="Avatar" class="w-full h-full object-cover">
-                            @else
-                                <img id="avatarPreview" src="" alt="Avatar" class="w-full h-full object-cover hidden">
-                                <svg id="avatarPlaceholder" class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-                            @endif
-                        </div>
-                        <label for="avatar" class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-success text-white flex items-center justify-center border-2 border-white shadow-sm hover:bg-success/90 transition-colors cursor-pointer">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                        </label>
-                        <input type="file" id="avatar" name="avatar" class="hidden" accept="image/*" onchange="previewImage(event)">
-                    </div>
-                    <span class="text-sm font-medium text-slate-500">Ubah foto profil</span>
-                    @error('avatar')<span class="text-xs text-danger mt-1 block">{{ $message }}</span>@enderror
-                </div>
 
                 <div class="max-w-2xl mx-auto space-y-6">
                     <!-- Nama Lengkap -->
@@ -130,19 +111,4 @@
     </div>
 </div>
 
-<script>
-    function previewImage(event) {
-        var reader = new FileReader();
-        reader.onload = function(){
-            var output = document.getElementById('avatarPreview');
-            var placeholder = document.getElementById('avatarPlaceholder');
-            output.src = reader.result;
-            output.classList.remove('hidden');
-            if(placeholder) {
-                placeholder.classList.add('hidden');
-            }
-        };
-        reader.readAsDataURL(event.target.files[0]);
-    }
-</script>
 @endsection
