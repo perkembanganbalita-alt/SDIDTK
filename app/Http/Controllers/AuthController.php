@@ -35,8 +35,21 @@ class AuthController extends Controller
 
         if ($user && Hash::check($request->password, $user->password)) {
             if (is_null($user->email_verified_at) && $user->role === 'Orangtua') {
+                $otpCode = sprintf("%06d", mt_rand(1, 999999));
+
+                $user->update([
+                    'otp_code' => $otpCode,
+                    'otp_expires_at' => Carbon::now()->addMinutes(10),
+                ]);
+
+                try {
+                    Mail::to($user->email)->send(new OtpMail($otpCode));
+                } catch (\Exception $e) {
+                    // Log error or ignore
+                }
+
                 return redirect()->route('otp.form', ['email' => $user->email])
-                    ->with('error', 'Akun Anda belum aktif. Silakan verifikasi OTP terlebih dahulu.');
+                    ->with('error', 'Akun Anda belum aktif. Kode OTP baru telah dikirim ke email Anda, silakan cek kotak masuk Anda.');
             }
 
             Auth::login($user);
