@@ -9,7 +9,10 @@ use Illuminate\Support\Facades\Mail;
 use App\Models\User;
 use App\Models\OrangTua;
 use App\Mail\OtpMail;
+use App\Mail\ResetPasswordMail;
 use Carbon\Carbon;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\DB;
 
 class AuthController extends Controller
 {
@@ -159,5 +162,60 @@ class AuthController extends Controller
         }
 
         return back()->with('success', 'Kode OTP baru telah dikirim ke email Anda.');
+    }
+
+    public function showLinkRequestForm()
+    {
+        return view('auth.passwords.email');
+    }
+
+    public function sendResetLinkEmail(Request $request)
+    {
+        $request->validate(['email' => 'required|email|exists:users,email']);
+
+        $token = Str::random(60);
+
+        DB::table('password_reset_tokens')->updateOrInsert(
+            ['email' => $request->email],
+            ['token' => $token, 'created_at' => Carbon::now()]
+        );
+
+        Mail::to($request->email)->send(new ResetPasswordMail($token, $request->email));
+
+        return back()->with('success', 'Link reset password telah dikirim ke email Anda.');
+    }
+
+    public function showResetForm(Request $request, $token)
+    {
+        return view('auth.passwords.reset', ['token' => $token, 'email' => $request->email]);
+    }
+
+    public function resetPassword(Request $request)
+    {
+        $request->validate([
+            'token' => 'required',
+            'email' => 'required|email|exists:users,email',
+            'password' => 'required|min:8|confirmed',
+        ]);
+
+        $reset = DB::table('password_reset_tokens')->where('email', $request->email)->first();
+
+        if (!$reset || $reset->token !== $request->token) {
+            return back()->withErrors(['email' => 'Token reset password tidak valid.']);
+        }
+
+        if (Carbon::parse($reset->created_at)->addMinutes(60)->isPast()) {
+            DB::table('password_reset_tokens')->where('email', $request->email)->delete();
+            return back()->withErrors(['email' => 'Token reset password sudah kedaluwarsa.']);
+        }
+
+        $user = User::where('email', $request->email)->first();
+        $user->update([
+            'password' => Hash::make($request->password)
+        ]);
+
+        DB::table('password_reset_tokens')->where('email', $request->email)->delete();
+
+        return redirect()->route('login')->with('success', 'Password Anda telah berhasil direset. Silakan login dengan password baru.');
     }
 }
